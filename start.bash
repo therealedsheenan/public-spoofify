@@ -11,3 +11,9 @@
 
 # prompt user to change mac address
 echo "Change your mac-address"
+
+# restarting en0
+# sudo ifconfig en0 down
+# sudo ifconfig en0 ether xx:xx:xx:xx:xx:xx
+# sudo ifconfig en0 up
+
