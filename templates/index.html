@@ -1,0 +1,19 @@
+
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Random Mac address</title>
+        <meta name="description" content="Random Mac address">
+        <meta name="author" content="Sheenan Tenepre">
+    </head>
+    <body>
+        {% if random_mac_address %}
+            <p>Generated random mac address: <strong>{{ random_mac_address }}</strong></p>
+        {% endif %}
+        <a href="/random-mac">Get JSON url.</a>
+    </body>
+</html>
