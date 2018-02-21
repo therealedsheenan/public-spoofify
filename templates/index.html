@@ -12,8 +12,11 @@
     </head>
     <body>
         {% if random_mac_address %}
-            <p>Generated random mac address: <strong>{{ random_mac_address }}</strong></p>
+            <h1>{{ random_mac_address }}</h1>
         {% endif %}
-        <a href="/random-mac">Get JSON</a>
+        <span>The generated random mac address is automatically copied to your clipboard.</span>
+        <div>
+            <a href="/random-mac">Get JSON</a>
+        </div>
     </body>
 </html>

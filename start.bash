@@ -17,3 +17,4 @@ echo "Change your mac-address"
 # sudo ifconfig en0 ether xx:xx:xx:xx:xx:xx
 # sudo ifconfig en0 up
 
+
