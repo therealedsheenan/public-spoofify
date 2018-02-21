@@ -1,5 +1,6 @@
 import random
 
+
 def randomMAC():
     return [ 0x00, 0x16, 0x3e,
              random.randint(0x00, 0x7f),
