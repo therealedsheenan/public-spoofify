@@ -5,18 +5,27 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-
         <title>Random Mac address</title>
         <meta name="description" content="Random Mac address">
         <meta name="author" content="Sheenan Tenepre">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='normalize.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
-        {% if random_mac_address %}
-            <h1>{{ random_mac_address }}</h1>
-        {% endif %}
-        <span>The generated random mac address is automatically copied to your clipboard.</span>
-        <div>
-            <a href="/random-mac">Get JSON</a>
-        </div>
+        <main>
+            <div class="Stage">
+                <div class="Stage-content">
+                    {% if random_mac_address %}
+                        <h1>{{ random_mac_address }}</h1>
+                    {% endif %}
+                    <span>The generated random mac address is automatically copied to your clipboard.</span>
+                    <div>
+                        <a class="link" href="/random-mac">Get JSON</a>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
